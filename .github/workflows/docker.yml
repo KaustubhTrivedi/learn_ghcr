@@ -22,8 +22,10 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t ghcr.io/${{ github.repository }}:latest .
+          # Use lowercase for the repository name
+          docker build -t ghcr.io/${{ github.actor }}/$(echo ${{ github.repository }} | tr '[:upper:]' '[:lower:]'):latest .
 
       - name: Push Docker image
         run: |
-          docker push ghcr.io/${{ github.repository }}:latest
+          # Push the image with lowercase repository name
+          docker push ghcr.io/${{ github.actor }}/$(echo ${{ github.repository }} | tr '[:upper:]' '[:lower:]'):latest
