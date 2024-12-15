@@ -36,6 +36,6 @@ jobs:
       - name: Push Docker image
         run: |
           REPO_NAME=$(echo ${{ github.repository }} | tr '[:upper:]' '[:lower:]')
-          USERNAME=$(echo ${{ github.actor }} | tr '[:upper:]' '[:lower:]')
+          USERNAME=$(echo ${{ github.actor }} | tr '[:upper:]' '[:lower:]')git commit --amend.
            docker push ghcr.io/${REPO_NAME}:${VERSION}
            docker push ghcr.io/${REPO_NAME}:latest
