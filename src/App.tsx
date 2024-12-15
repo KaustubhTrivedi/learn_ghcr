@@ -23,7 +23,7 @@ function App() {
         </button>
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
-          <span>Kaustubh here!!!!!</span>
+          <span>Things have changed :(</span>
         </p>
       </div>
       <p className="read-the-docs">
