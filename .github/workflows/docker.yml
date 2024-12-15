@@ -31,10 +31,10 @@ jobs:
           # Convert both GitHub username and repository name to lowercase
           REPO_NAME=$(echo ${{ github.repository }} | tr '[:upper:]' '[:lower:]')
           USERNAME=$(echo ${{ github.actor }} | tr '[:upper:]' '[:lower:]')
-           docker build -t ghcr.io/${USERNAME}/${REPO_NAME}:${VERSION} .
+           docker build -t ghcr.io/${REPO_NAME}:${VERSION} .
 
       - name: Push Docker image
         run: |
           REPO_NAME=$(echo ${{ github.repository }} | tr '[:upper:]' '[:lower:]')
           USERNAME=$(echo ${{ github.actor }} | tr '[:upper:]' '[:lower:]')
-           docker build -t ghcr.io/${USERNAME}/${REPO_NAME}:${VERSION} .
+           docker build -t ghcr.io/${REPO_NAME}:${VERSION} .
