@@ -23,7 +23,7 @@ function App() {
         </button>
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
-          <span>Does the new versoin comes up?</span>
+          <span>akjsfaidpasihvdaskjdvnjbn</span>
         </p>
       </div>
       <p className="read-the-docs">
